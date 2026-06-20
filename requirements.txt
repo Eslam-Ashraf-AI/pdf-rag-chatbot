@@ -1,0 +1,34 @@
+# Core LangChain packages with compatible versions
+langchain==0.1.0
+langchain-community==0.0.10
+
+# Vector store and embeddings
+faiss-cpu==1.7.4
+sentence-transformers==2.2.2
+transformers==4.36.0  # Compatible with sentence-transformers
+torch==2.1.0  # Compatible version for sentence-transformers
+
+# Hugging Face Hub - Fixed version
+huggingface-hub==0.19.4  # This version has cached_download
+
+# PDF processing
+pypdf==3.17.4
+
+# FastAPI and server
+fastapi==0.104.1
+uvicorn==0.24.0
+python-multipart==0.0.6
+
+# Data models
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Ollama integration
+ollama==0.1.7
+
+# Environment
+python-dotenv==1.0.0
+
+# Additional dependencies that might be needed
+numpy==1.24.3
+scikit-learn==1.3.0
