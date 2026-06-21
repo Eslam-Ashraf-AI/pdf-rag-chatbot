@@ -1,6 +1,6 @@
 # PDF RAG Chatbot 📚🤖
 
-A sophisticated **Retrieval-Augmented Generation (RAG)** system that transforms your PDF documents into an intelligent, conversational knowledge base. Built with FastAPI, LangChain, and a responsive React frontend, completely powered by local LLMs via Ollama[cite: 5, 7, 10].
+A sophisticated **Retrieval-Augmented Generation (RAG)** system that transforms your PDF documents into an intelligent, conversational knowledge base. Built with modern web technologies and powered by local LLMs via Ollama.
 
 ![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi)
@@ -10,27 +10,33 @@ A sophisticated **Retrieval-Augmented Generation (RAG)** system that transforms 
 ## ✨ Features
 
 ### 🎯 Core Functionality
-- **Smart PDF Processing**: Upload multiple PDFs with intelligent text extraction, preprocessing, and chunking[cite: 2, 7, 9].
-- **Advanced Document Understanding**: Automatic chapter detection patterns and layout structure analysis[cite: 7].
-- **Conversational AI**: Natural language querying of document content with strict point-based professional outputs[cite: 5, 7].
-- **Source Attribution**: Every valid response includes document source identifiers and page references[cite: 6, 7].
-- **System Quality Assessment**: Built-in confidence scoring thresholds to gauge answer reliability[cite: 3, 7].
+- **Smart PDF Processing**: Upload multiple PDFs with intelligent text extraction and chunking
+- **Advanced Document Understanding**: Automatic chapter detection and structure analysis
+- **Conversational AI**: Natural language querying of document content
+- **Structured Responses**: Professional, bullet-pointed answers with source citations
+- **Real-time Chat**: Smooth, responsive chat interface with typing indicators
+
+### 🧠 AI & RAG Features
+- **Local LLM Integration**: Powered by Ollama (Mistral 7B by default)
+- **Semantic Search**: Advanced embeddings with FAISS vector store
+- **Context-Aware Responses**: Retrieves relevant chunks with confidence scoring
+- **Source Attribution**: Every response includes document sources and page references
+- **Quality Assessment**: Built-in confidence scoring for answer reliability
 
 ### 🎨 Modern UI/UX
-- **Glassmorphism Design**: Beautiful, modern interface utilizing custom CSS and Tailwind styling[cite: 10].
-- **Interactive Animations**: Smooth transitions and layout animations powered by Framer Motion[cite: 10].
-- **Drag & Drop Upload**: Intuitive file upload zone with instant visual feedback states[cite: 10].
-- **Full-Screen Layout**: Distraction-free toggle view separating document onboarding and exploration[cite: 10].
+- **Glassmorphism Design**: Beautiful, modern interface with blur effects
+- **Responsive Layout**: Works seamlessly on desktop and mobile
+- **Interactive Animations**: Smooth transitions and hover effects powered by Framer Motion
+- **Drag & Drop Upload**: Intuitive file upload with visual feedback
+- **Full-Screen Chat**: Distraction-free chat experience
 
----
-
-## 🏗️ Project Architecture
+## 🏗️ Architecture
 
 ```text
 ├── .env                  # Local server and RAG settings configurations
 ├── api.py                # FastAPI endpoint handlers and API logic mapping
 ├── config.py             # Environment variable parsing into Pydantic Settings
-├── exceptions.py         # Custom exception declarations for RAG pipeline steps
+├── exceptions.py         # Custom exception classes
 ├── index.html            # Single-page React app (Frontend)
 ├── main.py               # Main application entrypoint running Uvicorn
 ├── models.py             # Pydantic core data schemas for validation
