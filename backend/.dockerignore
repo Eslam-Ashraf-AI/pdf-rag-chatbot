@@ -1,0 +1,23 @@
+# Git
+.git
+.gitignore
+
+# Python caching
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Environments
+.env
+venv/
+env/
+.venv/
+
+# Docker configuration files
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Local HuggingFace cache (Let Docker manage its own internal caching)
+.cache/
